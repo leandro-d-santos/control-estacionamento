@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <title>Controle de Estacionamento</title>
+  <link rel="stylesheet"
+        href="./bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet"
+        href="./style.css">
+</head>
+
+<body>
+  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand">Gerenciamento de vagas</a>
+      <button class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse"
+           id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active"
+             href="./index.html">Cadastrar vagas
+          </a>
+          <a class="nav-link"
+             aria-current="page"
+             href="./consulta-vagas.html">Consultar vagas
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <form onsubmit="return false"
+          class="needs-validation">
+          <input id="codigoInput" type="text" hidden>
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+          <div class="form-floating">
+            <input type="text"
+                   class="form-control"
+                   id="proprietarioInput"
+                   placeholder="Nome do proprietário"
+                   required>
+            <label for="proprietarioInput">Nome do proprietário</label>
+            <div class="invalid-feedback">
+            Obrigatório
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4">
+        <div class="form-floating">
+          <input type="number"
+                 class="form-control"
+                 id="numeroApartamentoInput"
+                 placeholder="Número do apartamento"
+                 required>
+          <label for="numeroApartamentoInput">Número do apartamento</label>
+          <div class="invalid-feedback">
+            Obrigatório
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4">
+        <div class="form-floating">
+          <input type="text"
+                 class="form-control"
+                 id="blocoApartamentoInput"
+                 placeholder="Bloco do apartamento"
+                 required>
+          <label for="blocoApartamentoInput">Bloco do apartamento</label>
+          <div class="invalid-feedback">
+            Obrigatório
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-md-3">
+      <div class="form-floating">
+        <input type="text"
+               class="form-control"
+               id="placaVeiculoInput"
+               placeholder="Placa do veículo"
+               required>
+        <label for="placaVeiculoInput">Placa do veículo</label>
+        <div class="invalid-feedback">
+          Obrigatório
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-3">
+      <div class="form-floating">
+        <input type="text"
+               class="form-control"
+               id="modeloVeiculoInput"
+               placeholder="Modelo do veículo"
+               required>
+        <label for="modeloVeiculoInput">Modelo do veículo</label>
+        <div class="invalid-feedback">
+          Obrigatório
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-3">
+      <div class="form-floating">
+        <input type="text"
+               class="form-control"
+               id="corVeiculoInput"
+               placeholder="Cor do veículo"
+               required>
+        <label for="corVeiculoInput">Cor do veículo</label>
+        <div class="invalid-feedback">
+          Obrigatório
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-3">
+      <div class="form-floating">
+        <input type="number"
+               class="form-control"
+               id="numeroVagaInput"
+               placeholder="Número da vaga"
+               required>
+        <label for="numeroVagaInput">Número da vaga</label>
+        <div class="invalid-feedback">
+          Obrigatório
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="d-flex justify-content-end">
+        <button type="button"
+                class="btn btn-primary btn-lg"
+                id="cadastrar">
+          Cadastrar
+        </button>
+      </div>
+    </div>
+  </div>
+  </form>
+  </div>
+  <script src="./localstorage.js"></script>
+  <script src="./show-toast.js"></script>
+  <script src="./cadastrar-vagas.js"></script>
+</body>
+
+</html>

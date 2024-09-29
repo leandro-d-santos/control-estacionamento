@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <title>Controle de Estacionamento</title>
+  <link rel="stylesheet"
+        href="./bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet"
+        href="./style.css">
+</head>
+
+<body>
+  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand">Gerenciamento de vagas</a>
+      <button class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse"
+           id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link"
+          id="homeLink"
+             href="./index.html">Cadastrar vagas</a>
+          <a class="nav-link active"
+             aria-current="page"
+             href="./consulta-vagas.html">Consultar vagas</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid table-responsive">
+    <table class="table table-sm table-bordered">
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">Proprietário</th>
+          <th scope="col">Número do apartamento</th>
+          <th scope="col">Bloco do apartamento</th>
+          <th scope="col">Placa do veículo</th>
+          <th scope="col">Modelo do veículo</th>
+          <th scope="col">Cor do veículo</th>
+          <th scope="col">Número da vaga</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+      </tbody>
+    </table>
+  </div>
+  <script src="./localstorage.js"></script>
+  <script src="./show-toast.js"></script>
+  <script src="./consultar-vagas.js"></script>
+</body>
+
+</html>

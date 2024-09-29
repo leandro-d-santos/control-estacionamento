@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+body > div.container-fluid .row {
+  margin-top: 10px;
+}
+
+.row > div {
+  margin-top: 5px;
+}
